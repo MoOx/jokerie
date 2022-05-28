@@ -1,0 +1,31 @@
+{
+  "name": "jokerie-backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "start:db": "docker-compose up -d",
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-graphql": "4.1.12",
+    "@strapi/plugin-i18n": "4.1.12",
+    "@strapi/plugin-users-permissions": "4.1.12",
+    "@strapi/provider-email-nodemailer": "4.1.12",
+    "@strapi/strapi": "4.1.12",
+    "pg": "^8.7.3"
+  },
+  "overrides": {
+    "graphql": "15.8.0"
+  },
+  "strapi": {
+    "uuid": "067087af-7f1a-42f4-9bb5-7e926250dd60"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  }
+}

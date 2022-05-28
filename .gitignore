@@ -1,0 +1,24 @@
+*.log
+
+# macOS crap
+.DS_Store
+
+# node
+node_modules
+
+# ReScript artifacts
+*.bs.js
+.bsb.lock
+**/lib/bs
+**/lib/ocaml
+**/.merlin
+
+# Next.js
+.next
+
+# Sentry
+.sentryclirc
+
+.env*
+
+src/svgs/components

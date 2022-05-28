@@ -1,0 +1,34 @@
+{
+  "name": "jokerie",
+  "reason": { "react-jsx": 3 },
+  "suffix": ".bs.js",
+  "package-specs": {
+    "module": "es6",
+    "in-source": true
+  },
+  "bsc-flags": [
+    "-open Belt"
+  ],
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "ppx-flags": ["rescript-relay/ppx"],
+  "bs-dependencies": [
+    "@ryyppy/rescript-promise",
+    "rescript-js",
+    "bs-fetch",
+    "rescript-webapi",
+    "@rescript-react-native/safe-area-context",
+    "@rescript-react-native/svg",
+    "@rescript/react",
+    "react-multiversal",
+    "rescript-next",
+    "rescript-react-native",
+    "rescript-relay",
+    "rescript-tinycolor"
+  ]
+}
+  
