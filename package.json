@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prepare": "npm run graphql:schema && npm run res:build",
+    "prepare": "patch-package && npm run graphql:schema && npm run res:build",
     "svg:clean": "trash src/svgs/components",
     "svg:convert": "react-from-svg src/svgs src/svgs/components --with-native-for-rescript",
     "svg": "npm run svg:clean; npm run svg:convert",
@@ -48,7 +48,7 @@
     "rescript-js": "^0.7.0",
     "rescript-next": "^12.0.1",
     "rescript-react-native": "^0.68.0",
-    "rescript-relay": "^1.0.0-beta.20",
+    "rescript-relay": "1.0.0-beta.21",
     "rescript-tinycolor": "^4.0.0",
     "rescript-webapi": "^0.6.1"
   },

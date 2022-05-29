@@ -4,11 +4,11 @@ open ReScriptJs
 let clientEnv = ref(None)
 let getClientEnvironment = (session: Js.Nullable.t<Auth.session>) => {
   if Js.typeof(Js.window) === #undefined {
-    Js.Console.log(("getClientEnvironment", "undefined wlle bye"))
+    Js.Console.log(("getClientEnvironment", "undefined bye"))
     None
   } else {
     if clientEnv.contents === None {
-      Js.Console.log(("getClientEnvironment", "defining!", session))
+      // Js.Console.log(("getClientEnvironment", "defining!", session))
       clientEnv.contents = Some(
         RelayEnv.makeEnvironment(
           session,
@@ -17,7 +17,7 @@ let getClientEnvironment = (session: Js.Nullable.t<Auth.session>) => {
         ),
       )
     }
-    Js.Console.log(("getClientEnvironment", "here you go", clientEnv.contents))
+    // Js.Console.log(("getClientEnvironment", "here you go", clientEnv.contents))
     clientEnv.contents
   }
 }
